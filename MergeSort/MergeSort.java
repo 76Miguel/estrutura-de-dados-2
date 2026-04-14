@@ -39,20 +39,18 @@ public class MergeSort {
             mergeSort(lista, meio + 1, fim);
             intercalar(lista, inicio, meio, fim);
         }
-
     }
 
     public static void intercalar(int[] lista, int inicio, int meio, int fim) {
         int[] auxiliar = new int[lista.length];
 
-        // Copiamos os dados para o auxiliar (a 'mesa' segura)
         for (int i = inicio; i <= fim; i++) {
             auxiliar[i] = lista[i];
         }
 
-        int i = inicio;      // Olho na metade esquerda da mesa
-        int j = meio + 1;    // Olho na metade direita da mesa
-        int k = inicio;      // Braço colocando na estante original
+        int i = inicio;      
+        int j = meio + 1;    
+        int k = inicio;      
 
         while (i <= meio && j <= fim) {
             if (auxiliar[i] <= auxiliar[j]) {
