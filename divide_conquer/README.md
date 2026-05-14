@@ -20,6 +20,7 @@ quicksort(array, 6, 6)
 ### Questão 5 - Análise do erro na recursão do Quick Sort
 
 /*
+
 public void quickSort (int [] array , int left , int right ) {
 
 int j = partition (array , left , right );
@@ -37,6 +38,7 @@ quickSort (array , j + 1, right );
 }
 
 }
+
 */
 
 falta a linha `if (left < right)` e esse if englobar os outros 2
@@ -44,16 +46,27 @@ falta a linha `if (left < right)` e esse if englobar os outros 2
 ### Questão 6 - Análise do erro na função Partition
 
 /*
+
 public int partition(int[] array, int left, int right) {
+
         int j = right;
+
         for (int i = right - 1; i >= left; i--) {
+
             if (array[i] > array[right]) {
+
                 int temp = array[i];
+ 
                 array[i] = array[right];
+ 
                 array[right] = temp;
+  
                 j = i;
+ 
             }
+  
         }
+        
         return j;
     }
 */
