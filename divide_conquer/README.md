@@ -21,13 +21,21 @@ quicksort(array, 6, 6)
 
 /*
 public void quickSort (int [] array , int left , int right ) {
+
 int j = partition (array , left , right );
+
 if ( left < j - 1) {
+
 quickSort (array , left , j - 1);
+
 }
+
 if (j + 1 < right ) {
+
 quickSort (array , j + 1, right );
+
 }
+
 }
 */
 
