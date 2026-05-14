@@ -19,7 +19,7 @@ quicksort(array, 6, 6)
 
 ### Questão 5 - Análise do erro na recursão do Quick Sort
 
-/*
+```
 
 public void quickSort (int [] array , int left , int right ) {
 
@@ -39,13 +39,13 @@ quickSort (array , j + 1, right );
 
 }
 
-*/
+```
 
 falta a linha `if (left < right)` e esse if englobar os outros 2
 
 ### Questão 6 - Análise do erro na função Partition
 
-/*
+```
 
 public int partition(int[] array, int left, int right) {
 
@@ -69,6 +69,6 @@ public int partition(int[] array, int left, int right) {
         
         return j;
     }
-*/
+```
 
 a troca fica errada porque troca o i(contador) com o array[right](o pivo) e acaba perdendo o pivo, ao envez de fixar o lugar dele
